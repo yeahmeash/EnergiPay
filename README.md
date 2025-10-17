@@ -1,94 +1,81 @@
-# Electricity Billing System
-This is a GUI made using Java Swing.
-It lets User perform multiple operations like:-
 
 
-1- User can Create his Personal login for security purposes.
+---
 
-2- User can Add customers and Calculate their Electricity Bill.
+# ⚡ EnergiPay 
 
-3- User can Pay Electricity Bills.
+**EnergiPay** is a desktop application built using **Java Swing** that simplifies electricity billing and customer management for utility providers.
+It offers a smooth graphical interface, secure authentication, and complete billing management — all integrated with a **MySQL database** via **JDBC**.
 
-4- User can Generate Bill.
+---
 
-## About Project:
-This Java application was created using Intelli J .
-Additional library was added for the support of JDBC (Required to setup the connection between the Database and Java Application).
-It contains 9 different classes which works together to create a better user experience .
+## 🚀 Key Features
 
-->Splash Screen class
+1. **User Authentication** – Create secure user accounts for personalized access.
+2. **Customer Management** – Add, view, and update customer details easily.
+3. **Bill Calculation** – Automatically calculate bills based on consumed units.
+4. **Payment Handling** – Manage bill payments within the system.
+5. **Bill Generation** – Instantly generate detailed bills for any customer.
 
-->Login Screen class
+---
 
-->Main System class
+## 🧠 About the Project
 
-->Add Customer class
+This system was developed in **IntelliJ IDEA** using **Java Swing** for the GUI and **JDBC** for database connectivity.
+It’s composed of multiple modular classes, each handling a different function of the billing process:
 
-->Pay Bill class
+* **SplashScreen** – Displays the welcome/loading interface.
+* **LoginPage** – Handles user authentication and access control.
+* **Dashboard** – Acts as the central navigation hub after login.
+* **AddCustomer** – Lets users add new electricity connections.
+* **PayBill** – Facilitates payment and transaction updates.
+* **GenerateBill** – Creates printable customer bills.
+* **ViewDetails** – Displays existing customer and billing data.
+* **LastBill** – Keeps track of previous bills and payments.
+* **DatabaseConnection** – Manages the JDBC link between Java and MySQL.
 
-->Generate Bill class
+---
 
-->Show Details class
+## 🗄️ Database Structure (MySQL)
 
-->Last Bill class
+The database used by **EnergiPay** includes four primary tables:
 
-->Connection Setup class(JDBC - MySQL)
+| Table        | Description                                                           |
+| ------------ | --------------------------------------------------------------------- |
+| **login**    | Stores user credentials (username, password)                          |
+| **bill**     | Contains billing details like meter number, units, month, and amount  |
+| **customer** | Keeps customer info such as name, address, city, email, and phone     |
+| **tax**      | Stores static tax details like meter rent, GST, service charges, etc. |
 
-## Database (MySQL)
-Database for this Electricity Billing System contains 4 Tables
+Communication between Java and MySQL is handled securely using **JDBC (Java Database Connectivity)**.
+
+---
+
+## 🖥️ Screens Overview
+
+Here’s what you’ll find inside the app:
+
+* **Login Window** – Secure access to the system
+* **Main Dashboard** – Central hub for all operations
+* **Add Customer Form** – Add or update customer data
+* **Bill Calculator** – Compute charges dynamically
+* **Customer Details View** – See all records at once
+* **Bill Generator** – Create and print customer bills
+
+---
+
+## 🧑‍💻 Author
+
+Developed by **Aishwarya Sharma**
+
+🔗 **Portfolio:** [yeahmeash-portfolio.netlify.app](https://yeahmeash-portfolio.netlify.app)
+💼 **LinkedIn:** [linkedin.com/in/aishwarya-sharma-799428205](https://linkedin.com/in/aishwarya-sharma-799428205)
+🐙 **GitHub:** [github.com/yeahmeash](https://github.com/yeahmeash)
 
 
-->Login Table (UserName,Password)
-
-->Bill Table(MeterNumber,Units,Month,Amount)
-
-->Emp Table(Name, MeterNumber, Address, State, City, Email, Phone)
-
-->Tax Table(MeterLocation,MeterType,PhaseCode,BillType,Days,MeterRent,MCB_Rent,ServiceRent,GST)
 
 
-Java communicates with MySQL tables using JDBC which stands for Java Database Connectivity.
+---
 
-## Screenshots:
-
-## Login
-
-<img src="https://github.com/Adarsh9616/Electricity_Billing_System/blob/master/ScreenShots/Login.JPG" width="400" height="300">
-
-## Main Page
-
-<img src="https://github.com/Adarsh9616/Electricity_Billing_System/blob/master/ScreenShots/Main.JPG" width="600" height="500">
-
-## Add Customer
-
-<img src="https://github.com/Adarsh9616/Electricity_Billing_System/blob/master/ScreenShots/AddC.JPG" width="500" height="500">
-
-## Calculate Bill
-
-<img src="https://github.com/Adarsh9616/Electricity_Billing_System/blob/master/ScreenShots/CalculateBill.JPG" width="500" height="500">
-
-## Details
-
-<img src="https://github.com/Adarsh9616/Electricity_Billing_System/blob/master/ScreenShots/Details.JPG" width="800" height="300">
-
-## Generate Bill
-
-<img src="https://github.com/Adarsh9616/Electricity_Billing_System/blob/master/ScreenShots/GenerateBill.JPG" width="400" height="700">
-
-## Author
-You can get in touch with me on my LinkedIn Profile: [![LinkedIn Link](https://img.shields.io/badge/Connect-AishwaryaSharma-blue.svg?logo=linkedin&longCache=true&style=social&label=Follow)](https://yeahmeash-portfolio.netlify.app/www.linkedin.com/in/aishwarya-sharma-799428205)
-
-You can also follow my GitHub Profile to stay updated about my latest projects: [![GitHub Follow](https://img.shields.io/badge/Connect-yeahmeash-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/yeahmeash)
-
-If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
-
-## Contributions Welcome
-If you find any bugs, have suggestions, or face issues:
-
-- Open an Issue in the Issues Tab to discuss them.
-- Submit a Pull Request to propose fixes or improvements.
-- Review Pull Requests from other contributors to help maintain the project's quality and progress.
-
-This project thrives on community collaboration! Members are encouraged to take the initiative, support one another, and actively engage in all aspects of the project. Whether it’s debugging, fixing issues, or brainstorming new ideas, your contributions are what keep this project moving forward.
-
-With modern AI tools like ChatGPT, solving challenges and contributing effectively is easier than ever. Let’s work together to make this project the best it can be! 🚀
+Would you like me to also create a **short version (3-paragraph)** README — for GitHub’s repository summary section (above the fold)?
+It helps your repo look cleaner and more professional at first glance.
